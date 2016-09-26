@@ -28,6 +28,9 @@
 		clear: left;
 	}
 	
+	#gallery li:nth-child(3n) {
+		clear: none;}	
+	
 	
 	
 	/***********************************

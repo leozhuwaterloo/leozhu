@@ -130,7 +130,9 @@ PAGE: PORTFOLIO
 	color: #bdc3c7;
 }
 
-
+#gallery li:nth-child(3n) {
+		clear: left;
+}
 
 /***********************************
 PAGE: ABOUT
