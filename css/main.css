@@ -178,6 +178,14 @@ PAGE: CONTACT
 	background-image: url('../img/twitter.png');
 }
 
+.contact-info li.facebook  a{
+	background-image: url('../img/facebook.png');
+}
+
+.contact-info li.wechat  a{
+	background-image: url('../img/wechat.png');
+}
+
 
 
 /***********************************
