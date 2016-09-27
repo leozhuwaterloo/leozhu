@@ -4,6 +4,12 @@ GENERAL
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	weight: 100%;
+     background: url(../img/background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #wrapper {
@@ -64,18 +70,18 @@ NAVIGATION
 
 nav {
 	text-align: center;
-	padding: 10px 0;
-	margin: 20px 0 0;
 }
 
 nav ul{
 	list-style: none;
 	margin: 0 10px;
 	padding: 0;
+	height: 5.5em;
 }
 
 nav li {
 	display: inline-block;
+	max-width: 30%;
 }
 
 nav a {
@@ -121,6 +127,22 @@ PAGE: PORTFOLIO
 	margin: 2.5%;
 	background-color: #f5f5f5;
 	color: #bdc3c7;
+}
+
+@keyframes pop{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.15);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+#gallery li:hover{
+	animation: pop 0.4s ease-out;
 }
 
 #gallery li a p {
@@ -214,6 +236,7 @@ nav {
 /* logo text */
 h1,h2 {
 	color: #fff;
+	padding: 0px 0px 20px 0px;
 }
 
 /* links */
@@ -227,10 +250,101 @@ nav a, nav a:visited {
 }
 
 /* selected nav link */
-nav a.selected, nav a:hover {
+nav a.selected .text{
 	color: #32673f;
 }
 
+
+/***********************************
+Load
+************************************/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0.2;
+	transform: translate(0em, 10em);
+  }
+  85% {
+    opacity: 0.8;
+	transform: translate(0em, -2em);
+  }
+  100% {
+    opacity: 1;
+	transform: translate(0em, 0em);
+  }
+}
+
+.fadeinup {
+	animation: fadeInUp 1.0s ease-out;
+}
+
+
+.svg-wrapper{
+	display: inline-block;
+}
+
+.shape {
+	width: 100%;
+	fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+	stroke-width: 8px;
+	stroke: #32673f;
+}
+
+.text {
+  color: #fff;
+  font-family: 'Changa One', sans-serif;
+  font-size: 1.15em;
+  text-align: center;
+  font-weight: 800;
+  position: relative;
+  top: -45px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 10px;
+  }
+}
+
+@keyframes change-color{
+	100%{
+		color: #32673f;
+	}
+}
+
+
+.svg-rect{
+	max-width: 100%;
+}
+
+.svg-wrapper:hover .shape {
+  animation: 0.5s draw linear forwards;
+}
+
+
+.svg-wrapper:hover .text {
+  animation: change-color 0.4s ease-out forwards;
+}
 
 
 
