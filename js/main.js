@@ -1,21 +1,21 @@
 $("#scrollToPortfolio").click(function() {
     $('html, body').animate({
         scrollTop: ($("#portfolio").offset().top)+($("#portfolio").height()/2)
-    }, 'quick');
+    }, 'slow');
 });
 
 
 $("#scrollToAbout").click(function() {
     $('html, body').animate({
         scrollTop: ($("#about").offset().top)+($("#about").height()/2)
-    }, 'quick');
+    }, 'slow');
 });
 
 
 $("#scrollToContact").click(function() {
     $('html, body').animate({
         scrollTop: ($("#contact").offset().top)+($("#contact").height()/2)
-    }, 'quick');
+    }, 'slow');
 });
 
 
@@ -55,7 +55,7 @@ if ($('#back-to-top').length) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
-        }, 700);
+        }, 'slow');
     });
 }
 
