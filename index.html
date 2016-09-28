@@ -7,6 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/responsive.css">
+		<script src="js/jquery-3.1.1.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -17,19 +18,19 @@
 			</a>
 			<nav>
 				<ul>
-					<li><a href="#portfolio"  class="svg-wrapper">
+					<li><a href="#portfolio"  id="scrollToPortfolio" class="svg-wrapper">
 						<svg height="60" width="120" xmlns="http://www.w3.org/2000/svg" class="svg-rect">
 							<rect class="shape" height="60" width="120" />
 						</svg>
 						<div class="text">Portfolio</div>
 					</a></li>
-					<li><a href="#about" class="svg-wrapper">
+					<li><a href="#about" id="scrollToAbout" class="svg-wrapper">
 						<svg height="60" width="120" xmlns="http://www.w3.org/2000/svg" class="svg-rect">
 							<rect class="shape" height="60" width="120" />3
 						</svg>
 						<div class="text">About</div>
 					</a></li>
-					<li><a href="#contact" class="svg-wrapper">
+					<li><a href="#contact" id="scrollToContact" class="svg-wrapper">
 						<svg height="60" width="120" xmlns="http://www.w3.org/2000/svg" class="svg-rect">
 							<rect class="shape" height="60" width="120" />
 						</svg>
@@ -38,12 +39,11 @@
 				</ul>
 			</nav>
 		</header>
-		<div  id="portfolio">
+		<div>
 		<svg viewBox="0 0 600 100" class="animated-text">
-
   <!-- Symbol with text -->
   <symbol id="s-text">
-    <text text-anchor="middle"
+    <text id="portfolio" text-anchor="middle"
           x="50%"
           y="35%"
           dy=".35em"
@@ -315,12 +315,13 @@
 			</section>
 			</div>
 			</div>
-			<footer>
+		<footer>
 				<a href="https://twitter.com/leozhu98"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
 				<a href="https://www.facebook.com/leo.zhu.7927"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
 				<a href="http://weixin.qq.com/r/CFrz6_TE67mUraCI9w8a"><img src="img/wechat-wrap.png" alt="Wechat Logo" class="social-icon"></a>
 				<p>&copy; 2016 Leo Zhu</p>
 			</footer>
-		</div>
+			<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+		<script src="js/main.js"></script>
 	</body>
 </html>
