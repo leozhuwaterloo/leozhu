@@ -17,19 +17,19 @@
 			</a>
 			<nav>
 				<ul>
-					<li><a href="index.html"  class="selected svg-wrapper">
+					<li><a href="#portfolio"  class="selected svg-wrapper">
 						<svg height="60" width="120" xmlns="http://www.w3.org/2000/svg" class="svg-rect">
 							<rect class="shape" height="60" width="120" />
 						</svg>
 						<div class="text">Portfolio</div>
 					</a></li>
-					<li><a href="about.html" class="svg-wrapper">
+					<li><a href="#about" class="svg-wrapper">
 						<svg height="60" width="120" xmlns="http://www.w3.org/2000/svg" class="svg-rect">
 							<rect class="shape" height="60" width="120" />3
 						</svg>
 						<div class="text">About</div>
 					</a></li>
-					<li><a href="contact.html" class="svg-wrapper">
+					<li><a href="#contact" class="svg-wrapper">
 						<svg height="60" width="120" xmlns="http://www.w3.org/2000/svg" class="svg-rect">
 							<rect class="shape" height="60" width="120" />
 						</svg>
@@ -38,7 +38,7 @@
 				</ul>
 			</nav>
 		</header>
-		
+		<div  id="portfolio">
 		<svg viewBox="0 0 600 100" class="animated-text">
 
   <!-- Symbol with text -->
@@ -110,9 +110,8 @@
   <use xlink:href="#s-text"
        class="text--transparent"></use>
 </svg>
-
-		<div id="wrapper">
-			<section class="fadeinup">
+	<div class="fadeinup" id="wrapper">
+			<section>
 				<ul id="gallery">
 					<li>
 						<a href="https://itunes.apple.com/app/id1145043890"> 
@@ -121,7 +120,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="achievement.html"> 
+						<a href="img/achievement.png"> 
 							<img src = "img/achievement.png" alt="">
 							<p>Academic achievement</p>
 						</a>
@@ -170,6 +169,152 @@
 					</li>
 				</ul>
 			</section>
+			</div>
+			</div>
+
+			<div>
+			<svg viewBox="0 0 600 300" id="rotating-text" >
+
+  <!-- Symbol -->
+  <symbol id="r-text">
+    <text id="about" text-anchor="middle"
+          x="50%" y="50%" dy=".35em">
+      ME = Code
+    </text>
+  </symbol>  
+
+  <!-- Duplicate symbols -->
+  <use xlink:href="#r-text" class="text"
+       ></use>
+  <use xlink:href="#r-text" class="text"
+       ></use>
+  <use xlink:href="#r-text" class="text"
+       ></use>
+  <use xlink:href="#r-text" class="text"
+       ></use>
+  <use xlink:href="#r-text" class="text"
+       ></use>
+
+</svg>
+			<div class="fadeinup" id="wrapper">
+			<section>
+				<img src="img/LeoZhuProfilePicture.jpg" alt="Picture of Leo Zhu" class="profile-photo">
+				<h3>About me</h3>
+				<p>Hi, my name is Leo Zhu! This is my personal portfolio featuring all the awesome stuffs that I did in the past or that I am currently working on.</p>
+				<p>I am currently a first-year student at the University of Waterloo, who have fair amount of experiences in Java, C#, and Unity3d.
+				I am majoring in Computer Science, and I am learning more about Javascript, C++, Html, Python, Racket, Css, and even more.</p>
+				<p>Simply click on the "<a href="index.html">Portfolio</a>" and see what I have accomplished in the past.</p>
+				<p>If you want to be a friend of mine, check me out on facebook. <a href="https://www.facebook.com/leo.zhu.7927">Leo Zhu</a>
+				<br>Or if you use wechat, friend me on wechat as well. <a href="http://weixin.qq.com/r/CFrz6_TE67mUraCI9w8a">Leo, Wechat ID: fgjk123fj</a>
+				(Link only work on mobile version)</br></p>
+				<p>If you would like to follow me on Twitter, my username is <a href="https://twitter.com/leozhu98">@leozhu98</a></p>
+			</section>
+			</div>
+			</div>
+			
+			
+			<div>
+			<svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 338" version="1.1">
+   <!-- Symbol with text -->
+  <symbol id="heart-text">
+    <text id="contact" class = "animated-text" text-anchor="middle"
+          x="50%"
+          y="35%"
+          dy=".35em"
+          class="text--line"
+          >
+      Like me? Contact me!
+    </text>    
+  </symbol>
+  
+  <!-- Clippath  with text -->
+  <clippath id="heart-text">
+    <text class = "animated-text" text-anchor="middle"
+          x="50%"
+          y="50%"
+          dy=".35em"
+          class="text--line"
+          >
+      Like me? Contact me!
+    </text>
+  </clippath>
+  
+
+  <!-- Group for shadow -->
+  <g clip-path="url(#heart-text)" class="shadow">
+    <rect
+          width="100%"
+          height="100%"         
+          class="anim-shape anim-shape--shadow"
+          ></rect>
+  </g>
+
+  <!-- Group with clippath for text-->
+  <g clip-path="url(#heart-text)" class="colortext">
+    <!-- Animated shapes inside text -->
+    <rect
+          width="100%"
+          height="100%"         
+          class="anim-shape"
+          ></rect>
+    <rect
+          width="80%"
+          height="100%"         
+          class="anim-shape"
+          ></rect>
+    <rect
+          width="60%"
+          height="100%"         
+          class="anim-shape"
+          ></rect>
+    <rect
+          width="40%"
+          height="100%"         
+          class="anim-shape"
+          ></rect>
+    <rect
+          width="20%"
+          height="100%"         
+          class="anim-shape"
+          ></rect>
+  </g>
+  
+  
+  
+  
+  
+  
+  
+  <g class="heart-loader__group">
+    <path class="heart-loader__square" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z"/>
+    <path class="heart-loader__circle m--left" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+    <path class="heart-loader__circle m--right" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+    <path class="heart-loader__heartPath" stroke-width="2" d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
+  </g>
+</svg>
+			
+			
+			<div class="fadeinup" id="wrapper">
+			
+			<section id="primary">
+				<h3>General Information</h3>
+				<p>If you have any questions regarding any projects that I have worked on, please do not hesitate to contact me.</p>
+				<p>Or if you just want to know me better, I am willing to chat with you as well.</p>
+				<p>Be a friend of mine, and check me out on Facebook, Twitter, or Wechat!</p>
+				<p>Thank you for any support that you have provided me. Thank you.</p>
+			</section>
+			<section id="secondary">
+				<h3>Contact details</h3>
+				<ul class="contact-info">
+					<!--<li class="phone"><a href="tel:555-555-5555">555-555-5555</a></li>*/-->
+					<li class="mail"><a href="mailto:yuner25699@gmail.com">yuner25699@gmail.com</a></li>
+					<li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=leozhu98">@leozhu98</a></li>
+					<li class="facebook"><a href="https://www.facebook.com/leo.zhu.7927">Leo Zhu</a></li>
+					<li class="wechat"><a href="http://weixin.qq.com/r/CFrz6_TE67mUraCI9w8a">Leo, Wechat ID: fgjk123fj</a></li>
+				</ul>
+			</section>
+			</div>
+			</div>
 			<footer>
 				<a href="https://twitter.com/leozhu98"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
 				<a href="https://www.facebook.com/leo.zhu.7927"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
