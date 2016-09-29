@@ -73,11 +73,17 @@
 		margin-bottom: 20px;
 	}
 	
-	header {
-		border-bottom: 5px solid #599a68;
-		margin-bottom: 60px;
+	body .hero{
+		height: 300px;
 	}
 	
+	.hide-logo{
+		display: unset;
+	}
+	
+	.header{
+		height: 130px;
+	}
 }
 
 

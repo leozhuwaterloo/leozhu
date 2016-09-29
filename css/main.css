@@ -5,10 +5,7 @@ GENERAL
 body {
 	font-family: 'Open Sans', sans-serif;
 	weight: 100%;
-     background: url(../img/background.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+    background: url(../img/background.jpg) no-repeat center center fixed; 
 	background-size: cover;
 }
 
@@ -36,21 +33,19 @@ h3 {
 
 
 
+
+
 /***********************************
 HEADING
 ************************************/
 
-
-header {
-	float: left;
-	margin: 0 0 30px 0;
-	padding: 5px 0 0 0;
-	width: 100%;
-}
-
 #logo {
 	text-align: center;
-	margin: 0;
+	margin: 0
+}
+
+.hide-logo{
+	display: none;
 }
 
 #logo:hover, #logo:focus{
@@ -199,7 +194,7 @@ PAGE: PORTFOLIO
 	animation: fadeInUp 1.0s ease-out forwards;
 }
 
-.pop-hover:hover, .pop-hover:focus{
+.pop-hover{
 	animation: pop 0.4s ease-out forwards;
 }
 
@@ -279,16 +274,8 @@ body {
 	color: #999;
 }
 
-/* green header */
-header {
-	background: #6ab47b;
-	border-color: #599a68;
-}
-
 /* nav background on mobile */
-nav {
-	background: #599a68;
-}
+
 
 /* logo text */
 h1,h2 {
@@ -425,7 +412,7 @@ text animation
 .anim-shape {
   transform-origin: 0x 150px;
   transform: scale(0, 1) translate(0, 0);
-  animation: moving-panel 3s ease-out forwards;
+  animation: moving-panel 7s ease-out infinite;
 }
 
 .colortext .anim-shape:nth-child(1) {
@@ -458,8 +445,16 @@ text animation
 }
 
 @keyframes moving-panel {
-  100% {
+  50% {
     transform: scale(1, 1) translate(20px, 0);
+  }
+  
+  80%{
+	  transform: scale(1, 1) translate(20px, 0);
+  }
+  
+  100%{
+	  transform: scale(0, 1) translate(2100px, 0);
   }
 }
 
@@ -473,7 +468,7 @@ text animation
 	position: relative;
 	width: 100%;
 	height: 50%;
-	margin: 0px;
+	margin-top: 10%;
 }
 
 
@@ -731,5 +726,166 @@ HEART and Text
 }
 
 
+/****************************
+Skill Bar Style
+**************************/
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#ddd;
+	height:35px;
+	border-radius:3px;
+	transition:0.2s linear;
+	transition-property:width, background-color;
+}
+
+.skillbar-left {
+	margin-left: 149px;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:150px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-family: 'Changa One', sans-serif;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
 
 
+/***************************
+Header
+****************************/
+
+body .hero {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  background-color: transparent;
+  background: linear-gradient(100deg, #7FDB8E, #81CE80 25%, #7FB6DB);
+}
+body .hero .w {
+  position: absolute;
+  top: 100%;
+  left: -25vw;
+  right: 0px;
+  background: url(../img/whitewave.svg);
+  background-position: center;
+  background-color:transparent;
+}
+body .hero .wave1 {
+  height: 240px;
+
+          transform: translateY(-40px);
+  background-size: 960px 300px;
+  opacity: 0.3;
+  left: -5vw;
+  right: -5vw;
+}
+body .hero .wave2 {
+  height: 240px;
+
+          transform: translateY(-80px);
+  background-size: 960px 240px;
+  opacity: 0.3;
+  left: -80vw;
+  right: -5vw;
+}
+body .hero .wave3 {
+  height: 220px;
+
+          transform: translateY(-120px);
+  background-size: 880px 220px;
+  opacity: 0.2;
+  left: 0vw;
+  right: -20vw;
+}
+body .hero .wave4 {
+  height: 280px;
+          transform: translateY(-160px);
+  background-size: 1120px 280px;
+  opacity: 0.1;
+  left: 0vw;
+  right: -40vw;
+}
+
+.header{
+	height:110px;
+}
+
+.header-green{
+	animation: fadeInDown 1.0s ease-out forwards;
+}
+
+.hide-header{
+	animation: fadeOutUp 1.0s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+	transform: translate(0em, -5em);
+  }
+  100% {
+    opacity: 1;
+	transform: translate(0em, 0em);
+		background-color: #81CE80;
+  }
+}
+
+@keyframes fadeOutUp {
+  100% {
+    opacity: 0;
+	transform: translate(0em, -5em);
+		display:none;
+  }
+  0% {
+    opacity: 1;
+	transform: translate(0em, 0em);
+		background-color: #81CE80;
+  }
+}
+
+	body .header {
+	  z-index: 1000;
+	  position: fixed;
+	  top: 0px;
+	  left: 0px;
+	  right: 0px;
+	  padding: 10px 20px;
+	}
+	
+	
