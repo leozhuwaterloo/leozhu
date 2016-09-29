@@ -92,7 +92,9 @@ $(window).scroll( function(){
 			 $('.header').removeClass('hide-header');
 		}
 	});
-	x = $(window).scrollTop();
+	
+	if(Math.abs(x-$(window).scrollTop())>400)
+		x = $(window).scrollTop();
 	
 });
 
