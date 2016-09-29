@@ -32,10 +32,26 @@ $(window).scroll( function(){
         if( bottom_of_window > center_of_object ){
             $(this).addClass('startFade');
         }
-    }); 
+    });
+	
+	/* Check the location of each desired element */
+    $('.pop-in').each( function(i){
 
+        var center_of_object = $(this).offset().top + ($(this).outerHeight()/2);
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        /* If the object is completely visible in the window, fade it in */
+        if( bottom_of_window > center_of_object ){
+            $(this).addClass('show-pop');
+        }
+    });
 });
 
+$(".pop-in").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+	$(this).removeClass("show-pop");
+	$(this).removeClass("pop-in");
+	$(this).addClass("pop-hover"); 
+})
 
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px

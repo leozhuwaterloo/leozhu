@@ -21,18 +21,16 @@
 	
 	#gallery li {
 		width: 28.3333%;
+		margin: 2.5%
 	}
+	
+	#gallery li:nth-child(n+1) {
+		clear: none;
+	}	
 	
 	#gallery li:nth-child(3n+1) {
 		clear: left;
 	}
-	
-	#gallery li:nth-child(2n+1) {
-		clear: none;
-	}	
-	
-	
-	
 	/***********************************
 	PAGE: ABOUT
 	************************************/
@@ -54,16 +52,16 @@
 		background: none;
 		float: right;
 		font-size: 1.125em;
-		margin-right: 5%;
+		margin-right: 2.5%;
 		text-align: right;
-		width: 50%;
+		width: 60%;
 	}
 	
 	#logo {
 		float: left;
 		margin-left: 5%;
 		text-align: left;
-		width: 40%;
+		width: 30%;
 	}
 	
 	h1 {

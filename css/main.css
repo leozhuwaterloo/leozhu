@@ -13,7 +13,7 @@ body {
 }
 
 #wrapper {
-	max-width: 940px;
+	max-width: 1080px;
 	margin: 0 auto;
 	padding: 0 5%;
 }
@@ -53,7 +53,7 @@ header {
 	margin: 0;
 }
 
-#logo:hover{
+#logo:hover, #logo:focus{
 	transform-origin: 0% 50%;
 	animation: bigger-font 0.5s ease-out;
 }
@@ -152,7 +152,7 @@ Back to top
     transition: opacity 0.2s ease-out;
     opacity: 0;
 }
-#back-to-top:hover {
+#back-to-top:hover, #back-to-top:focus{
     background: #e9ebec;
 }
 #back-to-top.show {
@@ -173,8 +173,8 @@ PAGE: PORTFOLIO
 
 #gallery li {
 	float: left;
-	width: 45%;
-	margin: 2.5%;
+	width: 80%;
+	margin: 10%;
 	background-color: #f5f5f5;
 	color: #bdc3c7;
 }
@@ -191,8 +191,16 @@ PAGE: PORTFOLIO
 	}
 }
 
-#gallery li:hover{
-	animation: pop 0.4s ease-out;
+.pop-in{
+	opacity: 0;
+}
+
+.show-pop{
+	animation: fadeInUp 1.0s ease-out forwards;
+}
+
+.pop-hover:hover, .pop-hover:focus{
+	animation: pop 0.4s ease-out forwards;
 }
 
 #gallery li a p {
@@ -202,7 +210,7 @@ PAGE: PORTFOLIO
 	color: #bdc3c7;
 }
 
-#gallery li:nth-child(2n+1) {
+#gallery li:nth-child(n+1) {
 	clear: left;
 }
 
@@ -396,12 +404,12 @@ Button animation
 	max-width: 100%;
 }
 
-.svg-wrapper:hover .shape {
+.svg-wrapper:hover .shape, .svg-wrapper:focus .shape {
   animation: 0.5s draw linear forwards;
 }
 
 
-.svg-wrapper:hover .text {
+.svg-wrapper:hover .text, .svg-wrapper:focus .text{
   animation: change-color 0.4s ease-out forwards;
 }
 
