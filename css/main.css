@@ -847,11 +847,11 @@ body .hero .wave4 {
 }
 
 .header-green{
-	animation: fadeInDown 1.0s ease-out forwards;
+	animation: fadeInDown 0.5s ease-out forwards;
 }
 
 .hide-header{
-	animation: fadeOutUp 1.0s ease-out forwards;
+	animation: fadeOutUp 0.5s ease-out forwards;
 }
 
 @keyframes fadeInDown {

@@ -97,11 +97,11 @@ $(window).scroll( function(){
 		}
 		
 		
-		if(top_of_window<500){
+		if(top_of_window<200){
 			hide_header=false;
 		}
 		
-		 if($(window).scrollTop() + $(window).height() + 500 >= $(document).height()) {
+		 if($(window).scrollTop() + $(window).height() + 200 >= $(document).height()) {
 			hide_header = true;
 		}
 		
@@ -118,6 +118,10 @@ $(window).scroll( function(){
 });
 
 
+$(".header").click(function() {
+    $(this).addClass('hide-header');
+	x = 0;
+});
 
 /**********************************
 gallery add hover while removing show animation
@@ -134,6 +138,9 @@ $(".pop-in").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
 	})
 
 })
+
+
+
 
 
 /*****************************
