@@ -1,3 +1,27 @@
+/**********************
+Loading Animation
+*****************/
+
+$(document).ready(function() {
+	$("#entire-page").css("display","none");
+});
+
+$(window).on("load", function() {
+    var initTime = 100;
+	setTimeout(function(){
+		$("#loader").addClass("hide-loading");
+	}, initTime);
+
+	setTimeout(function(){
+		$("#entire-page").css("display","unset");
+	}, initTime+400);
+	
+	setTimeout(function(){
+		$("#loader").css("display","none");
+	}, initTime+1000);
+});
+
+
 /**************************
 Slow scroll
 ***********************/
@@ -119,8 +143,10 @@ $(window).scroll( function(){
 
 
 $(".header").click(function() {
-    $(this).addClass('hide-header');
-	x = 0;
+	if($(window).scrollTop()>200){
+		$(this).addClass('hide-header');
+		x = 0;
+	}
 });
 
 /**********************************

@@ -170,8 +170,7 @@ PAGE: PORTFOLIO
 	float: left;
 	width: 80%;
 	margin: 10%;
-	background-color: #f5f5f5;
-	color: #bdc3c7;
+	background-color: #f2f0f3;
 }
 
 @keyframes pop{
@@ -202,7 +201,8 @@ PAGE: PORTFOLIO
 	margin: 0;
 	padding: 5%;
 	font-size: 0.75em;
-	color: #bdc3c7;
+	font-family: 'Open Sans', sans-serif;
+	color: #8e99ab;
 }
 
 #gallery li:nth-child(n+1) {
@@ -354,7 +354,7 @@ Button animation
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
 	stroke-width: 8px;
-	stroke: #32673f;
+	stroke: #48525e;
 }
 
 .text {
@@ -382,7 +382,7 @@ Button animation
 
 @keyframes change-color{
 	100%{
-		color: #32673f;
+		color: #48525e;
 	}
 }
 
@@ -734,7 +734,7 @@ Skill Bar Style
 	display:block;
 	margin-bottom:15px;
 	width:100%;
-	background:#ddd;
+	background:#e6e6e6;
 	height:35px;
 	border-radius:3px;
 	transition:0.2s linear;
@@ -795,7 +795,7 @@ body .hero {
   position: relative;
   height: 200px;
   background-color: transparent;
-  background: linear-gradient(100deg, #7FDB8E, #81CE80 25%, #7FB6DB);
+  background: linear-gradient(100deg, #7a8b9f, #b4bcc9 25%, #7a8b9f);
 }
 body .hero .w {
   position: absolute;
@@ -862,7 +862,7 @@ body .hero .wave4 {
   100% {
     opacity: 1;
 	transform: translate(0em, 0em);
-		background-color: #81CE80;
+		background-color: #8e99ab;
   }
 }
 
@@ -875,9 +875,46 @@ body .hero .wave4 {
   0% {
     opacity: 1;
 	transform: translate(0em, 0em);
-		background-color: #81CE80;
+		background-color: #8e99ab;
   }
 }
+
+
+.hide-loading{
+	animation: hide-loading 1s ease-out forwards;
+}
+
+@keyframes hide-loading {
+  100% {
+	transform: translate(0em, -100%);
+  }
+  0% {
+	transform: translate(0em, 0em);
+  }
+}
+
+
+#loader {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+	z-index: 1001;
+	background-color:#8e99ab;
+  }
+#loader img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+}
+
+
+
+
 
 	body .header {
 	  z-index: 1000;
