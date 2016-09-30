@@ -3,13 +3,24 @@ GENERAL
 ************************************/
 html, body {
 	height:100%;
+	width: 100%;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	weight: 100%;
-    background: url(../img/background.jpg) no-repeat center center fixed; 
-	background-size: cover;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: -1;
+  /* Preserve aspet ratio */
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #wrapper {
