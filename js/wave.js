@@ -1517,4 +1517,4 @@ window.particlesJS.load = function(tag_id, path_config_json, callback) {
    xhr.send();
 };
 
-particlesJS.load('particles-js', 'http://live.koya.io/XjRprX_particles.json', function() {});
+particlesJS.load('particles-js', 'js/wave.json', function() {});
