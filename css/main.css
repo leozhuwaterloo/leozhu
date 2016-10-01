@@ -17,8 +17,8 @@ body {
   left: 0; 
   z-index: -1;
   /* Preserve aspet ratio */
-  max-width: 120%;
-  max-height: 120%;
+  max-width: 1000%;
+  max-height: 1000%;
   min-width: 100%;
   min-height: 100%;
 }
