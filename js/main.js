@@ -2,13 +2,36 @@
 Loading Animation
 *****************/
 
+
+var loaded = false;
 $(document).ready(function() {
 	$("#entire-page").css("display","none");
-	var h = $(window).height();
-	$("#bg").height(h);
+
+	
+	var initTime = 10000;
+	setTimeout(function(){
+		if(!loaded)
+		$("#loader").addClass("hide-loading");
+	}, initTime);
+
+	setTimeout(function(){
+		if(!loaded)
+		$("#entire-page").css("display","unset");
+	}, initTime+400);
+	
+	setTimeout(function(){
+		if(!loaded)
+		$("#loader").css("display","none");
+	}, initTime+1000);
+	
+	setTimeout(function(){
+		if(!loaded)
+		$('.header').removeClass('hide-header');
+	}, initTime+400);
 });
 
 $(window).on("load", function() {
+	loaded = true;
     var initTime = 100;
 	setTimeout(function(){
 		$("#loader").addClass("hide-loading");
