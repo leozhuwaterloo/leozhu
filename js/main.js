@@ -138,7 +138,6 @@ $(window).scroll( function(){
 		//down
 		
 	});
-	
 	var top_of_window = $(window).scrollTop();
 	
 	var hide_header;
@@ -150,15 +149,13 @@ $(window).scroll( function(){
 			 hide_header=false;
 		}
 		
-		
-		if(top_of_window<200){
-			hide_header=false;
-		}
-		
 		 if($(window).scrollTop() + $(window).height() + 200 >= $(document).height()) {
 			hide_header = true;
 		}
 		
+		if(top_of_window<200){
+			hide_header=false;
+		}
 		
 		if(hide_header)
 			 $('.header').addClass('hide-header');

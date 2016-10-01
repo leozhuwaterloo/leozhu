@@ -91,6 +91,16 @@ h2 {
 	font-weight: normal;
 }
 
+#subtitle{
+	font-family: 'Changa One', sans-serif;
+	font-size: 2em;
+	margin: -5px 0 0;
+	font-weight: normal;
+	color: #8e99ab;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
 
 
 /***********************************
@@ -103,19 +113,19 @@ nav {
 
 nav ul{
 	list-style: none;
-	margin: 0 10px;
+	margin: 0;
 	padding: 0;
 	height: 5.5em;
 }
 
 nav li {
 	display: inline-block;
-	max-width: 30%;
+	max-width: 32%;
 }
 
 nav a {
 	font-weight: 800;
-	padding: 15px 10px;
+	padding: 15px 2.5px;
 }
 
 
@@ -368,7 +378,7 @@ Button animation
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
 	stroke-width: 8px;
-	stroke: #48525e;
+	stroke: #19F7FF;
 }
 
 .text {
@@ -396,7 +406,7 @@ Button animation
 
 @keyframes change-color{
 	100%{
-		color: #48525e;
+		color: #19F7FF;
 	}
 }
 
@@ -408,7 +418,6 @@ Button animation
 .svg-wrapper:hover .shape, .svg-wrapper:focus .shape {
   animation: 0.5s draw linear forwards;
 }
-
 
 .svg-wrapper:hover .text, .svg-wrapper:focus .text{
   animation: change-color 0.4s ease-out forwards;
@@ -930,13 +939,13 @@ body .hero .wave4 {
 
 
 
-	body .header {
-	  z-index: 1000;
-	  position: fixed;
-	  top: 0px;
-	  left: 0px;
-	  right: 0px;
-	  padding: 10px 20px;
-	}
+body .header {
+	z-index: 1000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	padding-top: 10px;
+}
 	
 	
