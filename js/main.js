@@ -4,6 +4,8 @@ Loading Animation
 
 $(document).ready(function() {
 	$("#entire-page").css("display","none");
+	var h = $(window).height();
+	$("#bg").height(h);
 });
 
 $(window).on("load", function() {
@@ -19,6 +21,11 @@ $(window).on("load", function() {
 	setTimeout(function(){
 		$("#loader").css("display","none");
 	}, initTime+1000);
+	
+	setTimeout(function(){
+		$('.header').removeClass('hide-header');
+	}, initTime+400);
+	
 });
 
 
