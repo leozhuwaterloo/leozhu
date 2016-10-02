@@ -45,7 +45,10 @@ h3 {
 	margin: 20px 0 0 0;
 }
 
-
+.index-paragraph p {
+    text-indent: 30px;
+	margin-bottom: 10px;
+}
 
 
 
@@ -94,12 +97,13 @@ h2 {
 #subtitle{
 	font-family: 'Changa One', sans-serif;
 	font-size: 2em;
-	margin: -5px 0 0;
+	margin: -5px 5%;
 	font-weight: normal;
 	color: #8e99ab;
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 30px;
+	line-height: 35px;
 }
 
 
