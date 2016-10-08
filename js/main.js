@@ -1,3 +1,5 @@
+
+
 /**********************
 Loading Animation
 *****************/
@@ -5,9 +7,15 @@ Loading Animation
 
 var loaded = false;
 $(document).ready(function() {
-	$("#entire-page").css("display","none");
-
+	var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+    var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+    var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+    var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+    var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
 	
+	if (!(is_chrome||is_safari)) alert('Use Chrome For Best Experience');
+		
+	$("#entire-page").css("display","none");
 	var initTime = 10000;
 	setTimeout(function(){
 		if(!loaded)
@@ -38,6 +46,7 @@ $(window).on("load", function() {
 	}, initTime);
 
 	setTimeout(function(){
+		$("#entire-page").removeAttr("style");
 		$("#entire-page").css("display","unset");
 	}, initTime+400);
 	
