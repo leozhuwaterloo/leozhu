@@ -6,6 +6,12 @@ html, body {
 	width: 100%;
 }
 
+video{
+	margin: 0 10% 10% 10%;
+	width: 80%;
+	height:80%;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	weight: 100%;
