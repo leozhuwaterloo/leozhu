@@ -214,8 +214,10 @@ if ($('#back-to-top').length) {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
                 $('#back-to-top').addClass('show');
+				$('#donate').addClass('show');
             } else {
                 $('#back-to-top').removeClass('show');
+				$('#donate').removeClass('show');
             }
         };
     backToTop();
@@ -229,6 +231,7 @@ if ($('#back-to-top').length) {
         }, 'slow');
     });
 }
+
 
 /************************************
 Force entire animation
