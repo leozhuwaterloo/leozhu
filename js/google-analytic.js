@@ -7,7 +7,6 @@
   ga('send', 'pageview');
   
   
-  
 if (typeof jQuery != 'undefined') {
   jQuery(document).ready(function($) {
     var filetypes = /\.(zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav)$/i;
