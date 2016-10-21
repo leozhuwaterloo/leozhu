@@ -12,7 +12,7 @@ $(document).ready(function() {
     var is_safari = navigator.userAgent.indexOf("Safari") > -1;
     var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
 	
-	if (!(is_chrome||is_safari)) alert('Use Chrome For Best Experience');
+	if (!(is_chrome||is_safari)) alert('Use Chrome Or Safari For Best Experience');
 		
 	$("#entire-page").css("display","none");
 	var initTime = 10000;
